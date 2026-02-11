@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
+}
+
+/* DARK MODE: sab text white */
+.dark .content-area * {
+  color: white !important;
+}
+
+/* LIGHT MODE: sab text black */
+.content-area * {
+  color: black;
+}
+
+
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.3);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.5);
+}
+
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;  
+  scrollbar-color: rgba(215, 210, 210, 0.3) transparent;
+}
