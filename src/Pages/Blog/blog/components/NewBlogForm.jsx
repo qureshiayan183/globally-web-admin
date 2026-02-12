@@ -114,14 +114,23 @@ function NewBlogForm() {
   };
 
   const validateForm = () => {
-    const { category, title, shortDescription, content, uploadedCoverImage } =
-      formData;
+    const {
+      category,
+      title,
+      shortDescription,
+      content,
+      uploadedCoverImage,
+      metaTitle,
+      metaDescription,
+    } = formData;
     if (
       !category.length ||
       !title ||
       !shortDescription ||
       !content ||
-      !uploadedCoverImage
+      !uploadedCoverImage ||
+      !metaTitle ||
+      !metaDescription
     ) {
       showErrorToast(
         "Please fill all required fields and upload the cover image.",

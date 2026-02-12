@@ -56,7 +56,7 @@ const UpdateBlogModal = ({ isOpen, onClose, fetchBlogs, initialData }) => {
     () => ({
       readonly: false,
       placeholder: "Start editing your content...",
-      height: 400,
+      height: 500,
       showCharsCounter: false,
       showWordsCounter: false,
       showXPathInStatusbar: false,
@@ -152,10 +152,10 @@ const UpdateBlogModal = ({ isOpen, onClose, fetchBlogs, initialData }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
       <ToastContainer position="top-right" autoClose={3000} />
 
-      <div className="bg-white dark:bg-[#1E2738] rounded-2xl shadow-2xl w-full max-w-5xl h-[90vh] flex flex-col border border-purple-300 dark:border-purple-600/50 animate-fadeIn">
+      <div className="bg-white dark:bg-[#1E2738] rounded-2xl shadow-2xl w-full max-w-7xl h-[95vh] flex flex-col border border-purple-300 dark:border-purple-600/50 animate-fadeIn">
         {/* Header */}
         <div className="flex justify-between items-center px-6 py-4 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 rounded-t-2xl">
           <h2 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
