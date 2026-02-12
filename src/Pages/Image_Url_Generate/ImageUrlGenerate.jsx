@@ -68,7 +68,7 @@ function ImageUrlGenerate() {
   };
 
   return (
-    <div className="p-4 transition-all duration-300 flex justify-center">
+    <div className="p-4 flex justify-center">
       <ToastContainer position="top-right" autoClose={3000} />
 
       {/* Main Card */}

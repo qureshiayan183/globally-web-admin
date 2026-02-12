@@ -54,7 +54,7 @@ export default function AddBlogCategory() {
   };
 
   return (
-    <div className="p-4 transition-all duration-300 flex items-center justify-center">
+    <div className="p-4 flex items-center justify-center">
       {/* CARD CONTAINER */}
       <div
         className="w-full bg-white dark:bg-[#1E2738] 

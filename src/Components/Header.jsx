@@ -31,7 +31,7 @@ function Header({ onToggleSidebar, sidebarOpen }) {
         text-gray-900 dark:text-white fixed top-0 right-0 z-20 
         flex items-center justify-between px-4 sm:px-6 py-2
         shadow-lg border-b border-gray-200 dark:border-gray-700
-        transition-all duration-700 ease-in-out w-full
+       ease-in-out w-full
         ${
           sidebarOpen ? "lg:ml-72 lg:w-[calc(100%-18rem)]" : "lg:ml-0 lg:w-full"
         }`}
@@ -42,7 +42,7 @@ function Header({ onToggleSidebar, sidebarOpen }) {
             onClick={onToggleSidebar}
             className="p-2.5 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 
             dark:hover:from-gray-700 dark:hover:to-gray-700
-            focus:outline-none transition-all duration-200 group"
+            focus:outline-none group"
           >
             <FaBars
               size={20}
@@ -71,7 +71,7 @@ function Header({ onToggleSidebar, sidebarOpen }) {
             <div
               onClick={() => setMenuOpen(!menuOpen)}
               className="flex items-center space-x-3 cursor-pointer 
-              px-3 py-2 rounded-xl transition-all duration-200
+              px-3 py-2 rounded-xl
               hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50
               dark:hover:from-gray-700 dark:hover:to-gray-700
               border-2 border-transparent hover:border-blue-200 dark:hover:border-gray-600"
@@ -111,13 +111,13 @@ function Header({ onToggleSidebar, sidebarOpen }) {
                 {/* Menu Items */}
                 <div className="py-2">
                   <Link
-                    to="/settings/profile"
+                    to="/settings/security"
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-3 px-4 py-3 
                     text-gray-700 dark:text-gray-200 
                     hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50
                     dark:hover:from-gray-700 dark:hover:to-gray-700
-                    transition-all duration-200 group"
+                   group"
                   >
                     <div className="w-8 h-8 rounded-lg bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center group-hover:scale-110 transition-transform">
                       <FaCog className="text-purple-600 dark:text-purple-400" />
@@ -139,7 +139,7 @@ function Header({ onToggleSidebar, sidebarOpen }) {
                     className="flex items-center gap-3 w-full text-left px-4 py-3 
                     text-red-600 dark:text-red-400 
                     hover:bg-red-50 dark:hover:bg-red-900/20
-                    transition-all duration-200 group"
+                   group"
                   >
                     <div className="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-900/30 flex items-center justify-center group-hover:scale-110 transition-transform">
                       <FaSignOutAlt className="text-red-600 dark:text-red-400" />
@@ -181,14 +181,14 @@ function Header({ onToggleSidebar, sidebarOpen }) {
               <div className="flex gap-3">
                 <button
                   onClick={() => setShowLogoutPopup(false)}
-                  className="flex-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-6 py-3.5 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 border-2 border-transparent hover:border-gray-300 dark:hover:border-gray-500"
+                  className="flex-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-6 py-3.5 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-600 border-2 border-transparent hover:border-gray-300 dark:hover:border-gray-500"
                 >
                   Cancel
                 </button>
 
                 <button
                   onClick={() => onErrorLogout()}
-                  className="flex-1 bg-gradient-to-r from-red-500 to-pink-600 text-white px-6 py-3.5 rounded-xl font-semibold hover:from-red-600 hover:to-pink-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                  className="flex-1 bg-gradient-to-r from-red-500 to-pink-600 text-white px-6 py-3.5 rounded-xl font-semibold hover:from-red-600 hover:to-pink-700 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                 >
                   Logout
                 </button>

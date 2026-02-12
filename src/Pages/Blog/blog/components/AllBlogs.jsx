@@ -210,7 +210,7 @@ function AllBlogs() {
   if (isLoading) return <Spinner />;
 
   return (
-    <div className="grid grid-cols-1 gap-6 p-4 transition-all duration-300">
+    <div className="grid grid-cols-1 gap-6 p-4">
       <ToastContainer position="top-right" autoClose={3000} />
 
       {/* MAIN CONTAINER */}
@@ -291,7 +291,7 @@ function AllBlogs() {
                   blogs.map((blog, index) => (
                     <tr
                       key={blog._id}
-                      className="hover:bg-blue-50/50 dark:hover:bg-gray-700/30 transition duration-200 group"
+                      className="hover:bg-blue-50/50 dark:hover:bg-gray-700/30 group"
                     >
                       <td className="py-4 px-6 text-center text-gray-500 dark:text-gray-400 font-medium">
                         {(currentPage - 1) * pageSize + index + 1}

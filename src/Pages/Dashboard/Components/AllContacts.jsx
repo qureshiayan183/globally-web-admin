@@ -36,7 +36,7 @@ export default function AllContacts() {
   ];
 
   return (
-    <div className="grid grid-cols-1 gap-6 p-4 transition-all duration-300">
+    <div className="grid grid-cols-1 gap-6 p-4">
       {/* LEFT BOX */}
       <div
         className="lg:col-span-2 bg-white dark:bg-[#1E2738]

@@ -18,7 +18,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
       {sidebarOpen && (
         <div
           onClick={() => setSidebarOpen(false)}
-          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-30 lg:hidden transition-opacity duration-300"
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-30 lg:hidden"
         />
       )}
 
@@ -27,7 +27,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
         className={`fixed top-0 left-0 h-full w-72
         bg-gradient-to-b from-white via-gray-50 to-white
         dark:from-gray-900 dark:via-gray-800 dark:to-gray-900
-        flex flex-col transition-all duration-500 z-40 
+        flex flex-col z-40 
         border-r border-gray-200 dark:border-gray-700
         ${sidebarOpen ? "translate-x-0 shadow-2xl" : "-translate-x-full"}`}
       >
@@ -121,7 +121,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
             text-red-600 dark:text-red-400 font-semibold
             hover:bg-red-100 dark:hover:bg-red-500/10
             border-2 border-transparent hover:border-red-200 dark:hover:border-red-800
-            transition-all duration-200 group"
+           group"
           >
             <div className="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-900/30 flex items-center justify-center group-hover:scale-110 transition-transform">
               <FaSignOutAlt className="text-red-600 dark:text-red-400" />
@@ -159,14 +159,14 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
               <div className="flex gap-3">
                 <button
                   onClick={() => setShowLogoutPopup(false)}
-                  className="flex-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-6 py-3.5 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 border-2 border-transparent hover:border-gray-300 dark:hover:border-gray-500"
+                  className="flex-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-6 py-3.5 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-600 border-2 border-transparent hover:border-gray-300 dark:hover:border-gray-500"
                 >
                   Cancel
                 </button>
 
                 <button
                   onClick={() => onErrorLogout()}
-                  className="flex-1 bg-gradient-to-r from-red-500 to-pink-600 text-white px-6 py-3.5 rounded-xl font-semibold hover:from-red-600 hover:to-pink-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                  className="flex-1 bg-gradient-to-r from-red-500 to-pink-600 text-white px-6 py-3.5 rounded-xl font-semibold hover:from-red-600 hover:to-pink-700 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                 >
                   Logout
                 </button>
@@ -238,7 +238,7 @@ function SectionTitle({ title }) {
 /* MENU ITEM */
 function MenuItem({ to, icon, label, setSidebarOpen }) {
   const baseClass = `flex items-center justify-between gap-3 px-4 py-3 rounded-xl
-    transition-all duration-200 group cursor-pointer`;
+   group cursor-pointer`;
 
   const inactiveClass = `text-gray-700 dark:text-gray-300 
     hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 
@@ -264,7 +264,7 @@ function MenuItem({ to, icon, label, setSidebarOpen }) {
           <div className="flex items-center gap-3">
             {/* Icon Background Box */}
             <div
-              className={`w-9 h-4 flex items-center justify-center transition-all duration-200
+              className={`w-9 h-4 flex items-center justify-center
                 group-hover:scale-110`}
             >
               <div
@@ -281,7 +281,7 @@ function MenuItem({ to, icon, label, setSidebarOpen }) {
 
           {/* Arrow */}
           <svg
-            className={`w-4 h-4 transition-all duration-200 ${
+            className={`w-4 h-4 ${
               isActive
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"

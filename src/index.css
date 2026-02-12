@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+/* html {
   transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
-}
+} */
 
 /* DARK MODE: sab text white */
 .dark .content-area * {

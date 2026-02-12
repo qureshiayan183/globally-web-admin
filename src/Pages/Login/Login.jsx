@@ -86,7 +86,7 @@ export default function Login() {
 
       {/* Login Card */}
       <div className="max-w-md w-full relative z-10">
-        <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 p-8 transform transition-all duration-300 hover:shadow-3xl">
+        <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 p-8 transform hover:shadow-3xl">
           {/* Logo Section */}
           <div className="text-center mb-8">
             <img
@@ -128,7 +128,7 @@ export default function Login() {
                   value={admin.userName}
                   onChange={handleInputChange}
                   placeholder="Enter your user name"
-                  className="w-full pl-11 pr-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/50 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-600 transition-all duration-200"
+                  className="w-full pl-11 pr-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/50 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-600"
                 />
               </div>
             </div>
@@ -148,7 +148,7 @@ export default function Login() {
                   value={admin.password}
                   onChange={handleInputChange}
                   placeholder="Enter your password"
-                  className="w-full pl-11 pr-12 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/50 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-600 transition-all duration-200"
+                  className="w-full pl-11 pr-12 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/50 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-600"
                 />
                 <button
                   type="button"
@@ -169,7 +169,7 @@ export default function Login() {
               <button
                 onClick={handleSubmit}
                 disabled={loading}
-                className={`w-full relative overflow-hidden rounded-xl px-6 py-3.5 font-semibold text-white transition-all duration-300 ${
+                className={`w-full relative overflow-hidden rounded-xl px-6 py-3.5 font-semibold text-white  ${
                   loading
                     ? "bg-gray-400 cursor-not-allowed"
                     : "bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
@@ -186,7 +186,7 @@ export default function Login() {
                   )}
                 </span>
                 {!loading && (
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 opacity-0 hover:opacity-100"></div>
                 )}
               </button>
             </div>

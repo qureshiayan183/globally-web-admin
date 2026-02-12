@@ -4,7 +4,7 @@ export default function Loader() {
   return (
     <div
       className="fixed inset-0 flex flex-col items-center justify-center 
-      bg-white/50 dark:bg-[#0f172a]/60 backdrop-blur-md z-[9999] transition-all duration-300"
+      bg-white/50 dark:bg-[#0f172a]/60 backdrop-blur-md z-[9999]"
     >
       <div className="relative flex flex-col items-center">
         {/* Outer Glowing Ring (Static) */}

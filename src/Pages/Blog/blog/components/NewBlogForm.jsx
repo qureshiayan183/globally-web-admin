@@ -182,7 +182,7 @@ function NewBlogForm() {
   );
 
   return (
-    <div className="p-4 transition-all duration-300">
+    <div className="p-4">
       <form onSubmit={handleSubmit}>
         <div className="mx-auto bg-white dark:bg-[#1E2738] rounded-2xl p-6 md:p-8 border border-purple-300 dark:border-purple-600/50 shadow-xl">
           {/* HEADER */}

@@ -77,7 +77,7 @@ export default function SecuritySettings() {
   };
 
   return (
-    <div className="p-4 transition-all duration-300 flex justify-center">
+    <div className="p-4 flex justify-center">
       <ToastContainer />
 
       {/* Main Container - Centered and limited width */}

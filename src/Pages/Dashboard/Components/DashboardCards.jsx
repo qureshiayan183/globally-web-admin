@@ -43,7 +43,7 @@ export default function DashboardCards() {
     group rounded-xl p-6 flex flex-col justify-between
     bg-white text-gray-800 shadow-sm
     dark:bg-[#1C2535] dark:text-white
-    transition-all duration-300 hover:shadow-md
+   hover:shadow-md
     ${card.borderColor}
   `}
           >
@@ -62,7 +62,7 @@ export default function DashboardCards() {
               <div
                 className={`
                   w-14 h-14 rounded-full flex items-center justify-center
-                  transition-all duration-300 group-hover:scale-110
+                   group-hover:scale-110
                   ${card.circleColor}
                 `}
               >

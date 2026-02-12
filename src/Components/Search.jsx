@@ -12,13 +12,13 @@ export default function Search() {
     <div className="relative flex items-center">
       {/* Desktop Search */}
       <div
-        className={`hidden md:flex absolute right-0 items-center h-10 bg-gray-100 dark:bg-[#1f1b3a] text-gray-700 dark:text-gray-200 rounded-lg shadow-sm transition-all duration-300 transform origin-right ${
+        className={`hidden md:flex absolute right-0 items-center h-10 bg-gray-100 dark:bg-[#1f1b3a] text-gray-700 dark:text-gray-200 rounded-lg shadow-sm transform origin-right ${
           searchOpen ? "w-80 px-3 opacity-100" : "w-50 px-0 opacity-0"
         }`}
       >
         <FaSearch
           size={18}
-          className={`text-gray-500 dark:text-gray-300 transition-all duration-300 ${
+          className={`text-gray-500 dark:text-gray-300 ${
             searchOpen ? "mr-2" : "hidden"
           }`}
         />
@@ -27,7 +27,7 @@ export default function Search() {
           placeholder="Search..."
           className={`flex-1 bg-transparent outline-none text-sm md:text-base text-gray-900 dark:text-gray-100 ${
             searchOpen ? "opacity-100" : "opacity-0"
-          } transition-opacity duration-300`}
+          } `}
         />
         {searchOpen && (
           <button

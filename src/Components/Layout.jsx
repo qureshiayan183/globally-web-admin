@@ -21,16 +21,16 @@ export default function Layout() {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-[#071225] transition-colors duration-700 ease-in-out">
+    <div className="bg-white dark:bg-[#071225] ease-in-out">
       <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-      <div className="flex-1 flex flex-col transition-all duration-700">
+      <div className="flex-1 flex flex-col">
         <Header
           sidebarOpen={sidebarOpen}
           onToggleSidebar={() => setSidebarOpen(!sidebarOpen)}
         />
 
         <main
-          className={`flex-1 md:p-4 md:pt-16 pt-16 transition-all duration-700 ${
+          className={`flex-1 md:p-4 md:pt-16 pt-16 ${
             sidebarOpen ? "lg:ml-72" : "lg:ml-0"
           }`}
         >
