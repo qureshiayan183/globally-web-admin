@@ -14,10 +14,10 @@ export function handleResponse(data) {
 
   if (data.error) {
     if (data.code === 3) {
-      // onErrorLogout();
+      onErrorLogout();
     }
     if (data.code === 401) {
-      // onErrorLogout();
+      onErrorLogout();
     }
     throw new Error(data.message || "An error occurred");
   }
